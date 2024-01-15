@@ -138,6 +138,9 @@ module Models
       audited
     end
 
+    class EncryptCompanyAuditedChanges < Company
+    end
+
     class Company::STICompany < Company
     end
 
