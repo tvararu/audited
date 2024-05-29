@@ -55,7 +55,7 @@ module Audited
       serialize :audited_changes, YAMLIfTextColumnType
     end
 
-    if Rails.gem_version >= Gem::Version.new("7.0") && Audited.encrypt_audited_changes
+    if Rails.gem_version >= Gem::Version.new("7.0")
       encrypts :audited_changes
     end
 
